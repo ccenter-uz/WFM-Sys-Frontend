@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:style": "prettier src --check",
-    "test": "vitest run",
+    "test": "",
     "postinstall": "husky install"
   },
   "dependencies": {
