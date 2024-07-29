@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 // eslint-disable-next-line
 import LayoutWrapper from "@app/Layout";
-import DashboardPage from "@pages/Dashboard";
+import { DashboardPage } from "@pages/Dashboard";
+import { DatabasePage } from "@pages/Database";
 
 export type linksType = {
   index?: boolean;
@@ -22,7 +23,7 @@ export const routerLinks: linksType[] = [
   },
   {
     path: "/database",
-    element: <DashboardPage />,
+    element: <DatabasePage />,
     title: "База данных сотрудников",
     icon: "/menu-icons/database.svg",
     subMenu: [],

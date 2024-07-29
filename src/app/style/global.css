@@ -68,3 +68,11 @@ span {
     font-size: var(--span-size-md);
   }
 }
+
+/* LIB-STYLES */
+.ant-breadcrumb {
+  margin: 0 0 16px 0;
+  .ant-breadcrumb-link {
+    color: grey;
+  }
+}
