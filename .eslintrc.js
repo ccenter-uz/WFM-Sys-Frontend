@@ -12,7 +12,9 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "react", "prettier"],
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", {
+        "endOfLine": "auto" }
+    ],
     "react/react-in-jsx-scope": "off",
     "no-restricted-imports": [
       "error",
@@ -41,7 +43,6 @@ module.exports = {
       "error",
       {
         alphabetize: { order: "asc", caseInsensitive: true },
-        "newlines-between": "always",
         pathGroups: [
           "@processes/**",
           "@pages/**",

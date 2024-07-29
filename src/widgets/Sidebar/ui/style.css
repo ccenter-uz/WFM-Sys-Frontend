@@ -1,0 +1,87 @@
+#sidebar {
+  .sidebar-content {
+    background: var(--sidebar-bg);
+    box-shadow: var(--box-shadow-1);
+    min-height: 100dvh;
+    max-height: max-content;
+    padding: 18px 0 18px 18px;
+    .logo {
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 183px;
+        height: 32px;
+      }
+    }
+    .menu-list {
+      .menu-list-item {
+        color: var(--text-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 13px;
+        padding: 8px 0 8px 20px;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+        &:hover {
+          position: relative;
+          color: var(--color-primary);
+          background: var(--color-primary-hover);
+          img {
+            filter: brightness(0) saturate(100%) invert(47%) sepia(95%)
+              saturate(3087%) hue-rotate(214deg) brightness(94%) contrast(92%);
+          }
+          transition: all 0.2s linear;
+        }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      width: var(--sidebar-width-laptop) !important;
+      max-width: var(--sidebar-width-laptop) !important;
+      min-width: var(--sidebar-width-laptop) !important;
+      padding: 0px;
+      .logo {
+        margin: 15px auto;
+        img {
+          width: 150px;
+          height: 24px;
+        }
+      }
+      .menu-list {
+        .menu-list-item {
+          padding: 8px;
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active_link {
+  position: relative;
+  background: var(--color-primary-hover);
+  color: var(--color-primary) !important;
+  img {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(95%) saturate(3087%)
+      hue-rotate(214deg) brightness(94%) contrast(92%);
+  }
+  &::after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
