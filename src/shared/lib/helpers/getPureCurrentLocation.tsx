@@ -1,4 +1,4 @@
-export const getLinkName = (url: string) => {
+const getLinkName = (url: string) => {
   switch (url) {
     case "database":
       return "База данных сотрудников";

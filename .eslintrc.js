@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   root: true,
   extends: [
@@ -12,8 +13,11 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "react", "prettier"],
   rules: {
-    "prettier/prettier": ["error", {
-        "endOfLine": "auto" }
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
     ],
     "react/react-in-jsx-scope": "off",
     "no-restricted-imports": [

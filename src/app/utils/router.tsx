@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 // eslint-disable-next-line
-import LayoutWrapper from "@app/Layout";
-import { DashboardPage } from "@pages/Dashboard";
-import { DatabasePage } from "@pages/Database";
+import LayoutWrapper from "@app/layout";
+import { DashboardPage } from "@pages/dashboard";
+import { DatabasePage } from "@pages/database";
 
 export type linksType = {
   index?: boolean;

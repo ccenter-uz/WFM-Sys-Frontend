@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { AntdProvider } from "./Antd";
-import { BrowserProvider } from "./Router";
+import { AntdProvider } from "./antd";
+import { BrowserProvider } from "./router";
 
 export const Allproviders: FC = () => {
   return (

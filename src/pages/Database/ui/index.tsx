@@ -1,11 +1,11 @@
 import { Breadcrumb, Tabs } from "antd";
 import { FC } from "react";
-import { BirthdaysPage } from "@widgets/Birthdays";
-import { Employees } from "@widgets/Employees";
-import { PositionsPage } from "@widgets/Positions";
+import { BirthdaysPage } from "@widgets/birthdays";
+import { Employees } from "@widgets/employees";
+import { PositionsPage } from "@widgets/positions";
 // eslint-disable-next-line
-import { getPureCurrentLocation } from "@shared/lib/helpers/getPureCurrentLocation";
 import "./style.css";
+import { getPureCurrentLocation } from "@shared/index";
 
 export const DatabasePage: FC = () => {
   return (
