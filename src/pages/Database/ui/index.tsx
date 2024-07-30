@@ -1,16 +1,15 @@
-import { Breadcrumb, Tabs } from "antd";
+import { Tabs } from "antd";
 import { FC } from "react";
 import { BirthdaysPage } from "@widgets/Birthdays";
 import { Employees } from "@widgets/Employees";
 import { PositionsPage } from "@widgets/Positions";
-// eslint-disable-next-line
-import { getPureCurrentLocation } from "@shared/lib/helpers/getPureCurrentLocation";
+import { Breadcrumbs } from "@features/index";
 import "./style.css";
 
 export const DatabasePage: FC = () => {
   return (
     <div id="database">
-      <Breadcrumb items={getPureCurrentLocation({})} />
+      <Breadcrumbs />
       <Tabs
         defaultActiveKey="1"
         type="card"
