@@ -1,0 +1,36 @@
+.employeesDepartmentTableItem {
+  height: 330px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 1024px) {
+    height: 300px;
+  }
+  .table {
+    .ant-table-thead {
+      .ant-table-cell {
+        background: #fff;
+        color: var(--color-table-head);
+        font-size: 15px;
+        font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .ant-table-row {
+      color: var(--color-secondary);
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+    .employee-col {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
