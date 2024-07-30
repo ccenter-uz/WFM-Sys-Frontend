@@ -210,7 +210,12 @@ module.exports = {
   },
   settings: {
     "import/resolver": {
-      typescript: true,
+      typescript: {
+        project: "./tsconfig.json",
+      },
+      node: {
+        path: ["src"],
+      },
     },
     react: {
       version: "detect",
