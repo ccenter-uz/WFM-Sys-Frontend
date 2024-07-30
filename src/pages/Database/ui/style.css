@@ -1,0 +1,44 @@
+#database {
+  .ant-tabs-nav {
+    margin-bottom: 0;
+    .ant-tabs-nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      .ant-tabs-tab {
+        width: 186px;
+        height: 63px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background: var(--color-primary);
+        color: #fff;
+        border-radius: 8px 8px 0px 0px;
+        transition: none;
+        border-bottom: none;
+      }
+      .ant-tabs-tab-active {
+        background: #fff;
+        color: var(--color-primary);
+        border: 1px solid rgba(226, 232, 240, 1);
+        transition: none;
+        border-bottom: none;
+      }
+    }
+  }
+
+  /* MEDIA */
+  @media screen and (max-width: 1024px) {
+    .ant-tabs-nav {
+      .ant-tabs-nav-list {
+        gap: 10px;
+        .ant-tabs-tab {
+          width: 120px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
