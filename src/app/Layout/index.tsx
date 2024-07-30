@@ -2,8 +2,10 @@ import { Layout } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
-import { HeaderContent } from "@widgets/header";
-import { Sidebar } from "@widgets/sidebar";
+// eslint-disable-next-line
+import { HeaderContent } from "../../widgets/header";
+// eslint-disable-next-line
+import { Sidebar } from "../../widgets/sidebar";
 // eslint-disable-next-line
 import { linksType } from "@app/utils/router";
 // eslint-disable-next-line
