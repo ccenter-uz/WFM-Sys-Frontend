@@ -1,4 +1,4 @@
-export const getLinkName: Record<string, string> = {
+export const LinkName: Record<string, string> = {
   database: "База данных сотрудников",
   wfm: "WFM",
   report: "Отчеты",

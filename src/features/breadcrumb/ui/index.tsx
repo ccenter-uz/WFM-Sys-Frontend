@@ -1,7 +1,7 @@
 import { Breadcrumb } from "antd";
 import { FC } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { getLinkName } from "@shared/index";
+import { LinkName } from "@shared/index";
 
 type Props = {
   hasBackButton?: boolean;
@@ -25,13 +25,13 @@ export const Breadcrumbs: FC<Props> = (props) => {
           ),
         },
         {
-          title: getLinkName[`${url}`],
+          title: LinkName[`${url}`],
         },
       ]);
     }
     return Array.from([
       {
-        title: getLinkName[`${url}`],
+        title: LinkName[`${url}`],
       },
     ]);
   };

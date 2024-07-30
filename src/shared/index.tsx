@@ -2,7 +2,7 @@
 export { TabPaper } from "./ui/TabPaper";
 
 // Helpers
-export { getLinkName } from "./lib/helpers/getLinkName";
+export { LinkName } from "./lib/helpers/LinkName";
 
 // Hooks
 
