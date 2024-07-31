@@ -18,6 +18,11 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    server: {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    },
     css: {
       preprocessorOptions: {
         modifyVars: {
