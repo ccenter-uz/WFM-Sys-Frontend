@@ -5,7 +5,6 @@ import type {
   FetchBaseQueryMeta,
   BaseQueryApi,
 } from "@reduxjs/toolkit/query";
-// import type { QueryReturnValue } from "@reduxjs/toolkit/query/baseQueryTypes";
 import { apiAccessTokenIsBrokenEvent } from "./apiAccessTokenIsBrokenEvent";
 import { baseQuery } from "./baseQuery";
 

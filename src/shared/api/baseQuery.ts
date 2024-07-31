@@ -15,6 +15,8 @@ export const baseQuery: BaseQueryFn<
   FetchBaseQueryMeta
 > = fetchBaseQuery({
   baseUrl: env.VITE_API_ENDPOINT,
+
+  // Setting Header to API call for Authorization:
   // prepareHeaders: (headers, { getState }) => {
   //   const { accessToken } = (getState() as RootState).session;
 
