@@ -1,6 +1,6 @@
 import { Layout } from "antd";
 import { Content } from "antd/es/layout/layout";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { Outlet } from "react-router-dom";
 import { HeaderContent } from "@widgets/Header";
 import { Sidebar } from "@widgets/Sidebar";
